@@ -1,16 +1,9 @@
-
 import Image from "next/image";
 import Link from "next/link";
 
-interface BrandLogoProps {
-    showName?: boolean;
-}
-
-export default function BrandLogo({
-    showName = true,
-}: BrandLogoProps) {
+export default function BrandLogo() {
     return (
-        <Link href="/" className="inline-flex items-center">
+        <Link href="/" aria-label="Medora home">
             <Image
                 src="/BrandLogo.png"
                 alt="Medora"
